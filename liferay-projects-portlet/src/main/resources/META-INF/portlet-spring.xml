@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.altran.liferay.service.ProjectLocalService" class="com.altran.liferay.service.impl.ProjectLocalServiceImpl" />
+	<bean id="com.altran.liferay.service.ProjectService" class="com.altran.liferay.service.impl.ProjectServiceImpl" />
+	<bean id="com.altran.liferay.service.persistence.ProjectPersistence" class="com.altran.liferay.service.persistence.ProjectPersistenceImpl" parent="basePersistence" />
+</beans>
